@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outDir dist ./src/thesaurus.ts",
+    "start": "npm run build && node ./dist/thesaurus.js Dummy Cherrytomate MDF Perg"
   },
   "author": "",
   "license": "ISC",
